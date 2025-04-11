@@ -1,0 +1,243 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400; 
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.5px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+section{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 25px;
+    color:#143D60;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+}
+h2{
+    font-size: 22px;
+    color: crimson;
+    text-align: center;
+}
+p{
+    font-size: 12px;
+    text-align: center;
+}
+#menu{
+    background-image: url(images/fondo-vector.jpg);
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(4, 150px);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "about about posts posts ."
+    "about about projects projects ."
+    "about about contact contact redes"
+    "name name name name ."
+   
+}
+#menu .tile{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+#menu .tile .front,
+#menu .tile .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#menu .tile a{
+    text-decoration: none;
+}
+#menu .tile .front{
+    color: white;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+   
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 10px;
+    border: 3px solid white; 
+   
+  
+}
+
+#menu .tile:hover .front{
+    transform: translateY(-100%); 
+}
+
+#menu .tile .back{
+    background-color:crimson;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+   
+}
+#menu .about-tile .front{
+    background-image: url(images/imagenflat2.png);
+   
+   
+}
+#menu .projects-tile .front{
+    background-image: url(images/proyectos.jpg);
+   
+}
+#menu .posts-tile .front{
+    background-image: url(images/dibujolenguajes.png);
+   
+}
+#menu .contact-tile .front{
+    background-image: url(images/contact2.jpg);
+   
+}
+
+
+.about-tile{
+    grid-area: about;
+}
+.projects-tile{
+    grid-area: projects;
+}
+.posts-tile{
+    grid-area: posts;
+}
+.contact-tile{
+    grid-area: contact;
+}
+.name-tile{
+    grid-area: name;
+}
+.social-tile{
+    grid-area: redes;
+    
+}
+.social-tile a{
+    font-size: 40px;
+    text-align:center;
+    color:#143D60;
+    padding: 25px;
+    margin: 10px;  
+}
+.social-tile a:hover{
+    font-size: 50px;
+    color:crimson;   
+   
+}
+
+/* +++++++*/
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+#about .tile{
+    border-radius: 5px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #C599B6;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+#about .tile-1{
+grid-column: 1 / 2;
+
+}
+#about .tile-3 img,
+#about .tile-1 img{
+    background-color: #A888B5;
+    width: 200px;
+    height: 200px;
+}
+#about .tile-2{
+grid-column: 2 /3;
+}
+#about .tile-2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*..................*/
+#posts{
+    background-color:#FFEFC8;
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(4, 120px);
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+
+
+}
+#posts i{
+    color:#143D60;
+    font-size: 40px;
+    text-align: center;
+}
+#posts div{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+#posts .div-1{
+    grid-column: 1 / 5; /* Ocupa de la columna 1 a la 5 */
+    grid-row: 1; /* Primera fila */
+}
+
+/* Acomoda los 6 siguientes divs en las filas 2 y 3, columnas 1 a 3 */
+#posts .div-2 { 
+    grid-column: 1;
+    grid-row: 2; 
+}
+#posts .div-3{ 
+    grid-column: 2; 
+    grid-row: 2; 
+}
+#posts .div-4{ grid-column: 3; grid-row: 2; }
+#posts .div-5{ grid-column: 1; grid-row: 3; }
+#posts .div-6{ grid-column: 2; grid-row: 3; }
+#posts .div-7{ grid-column: 3; grid-row: 3; }
+
+/* Últimos 2 divs en columna 5, filas 2 y 3 */
+#posts .div-8{ grid-column: 4; grid-row: 2; }
+#posts .div-9{ grid-column: 4; grid-row: 3; }
