@@ -176,10 +176,7 @@ div{
 #about .tile{
     padding: 20px;
     box-sizing: border-box;
-    background-image: url(images/fondodistintovertical1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #F0F1C5;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -215,10 +212,7 @@ grid-column: 2 /3;
 #posts .content-p{
     padding: 5px;
     box-sizing: border-box;
-    background-image: url(images/fondodistinto3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color:#F0F1C5;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -227,10 +221,6 @@ grid-column: 2 /3;
 }
 #posts .div-habilidades{
     grid-column: 2;
-    background-image: url(images/fondodistinto3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: grid;
     justify-content: center;
     grid-template-columns:repeat(4, 1fr);
@@ -272,10 +262,7 @@ grid-column: 2 /3;
 }
 /*...........*/
 #projects{
-    background-image: url(images/fondodistinto2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #F0F1C5;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
@@ -303,6 +290,7 @@ grid-column: 2 /3;
 
 /*..........*/
 #contact{
+    background-color: #F0F1C5;
     background-image: url(images/fondodistinto.png);
     padding: 20px;
     margin: 10px;
@@ -342,15 +330,8 @@ grid-column: 2 /3;
 }
 @media (max-width:740px){
     #menu{
-        background-image: url(images/fondodistinto3.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: grid;
         grid-template-columns: 200px 200px 80px;
         grid-template-rows: repeat(3, 200px);
-        justify-content: center;
-        align-content: center;
         grid-template-areas: 
         "about posts ."
         "projects contact redes"
@@ -359,7 +340,7 @@ grid-column: 2 /3;
     }
     #about {
         display: grid;
-        grid-template-columns: 120px 1fr;
+        grid-template-columns: 110px 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 10px;
         padding: 10px;
@@ -383,6 +364,53 @@ grid-column: 2 /3;
     #about .tile-2 img{
             width: 150px;
             height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        i{
+            color:#143D60;
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+            margin: 10px;
+        }
+        i:hover{
+            font-size: 45px;
+            color:crimson;   
+           
+        }
+}
+@media (max-width:450px){
+    #menu{
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px 60px 60px;
+        grid-template-areas: 
+        "about posts "
+        "projects contact"
+        "redes redes"
+        "name name  "
+       
+    }
+    #menu .social-tile{
+        display: flex;
+        
+    }
+    #about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        "tile1 "
+        "tile2"
+        "tile3";
+
+    }
+      
+    #about .tile-2 img{
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
         }
