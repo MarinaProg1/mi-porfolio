@@ -340,6 +340,51 @@ grid-column: 2 /3;
 .form-cta{
     font-family:inherit;
 }
-@media (max-width:870px){
-    
+@media (max-width:740px){
+    #menu{
+        background-image: url(images/fondodistinto3.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 200px 200px 80px;
+        grid-template-rows: repeat(3, 200px);
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: 
+        "about posts ."
+        "projects contact redes"
+        "name name  ."
+       
+    }
+    #about {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+        grid-template-areas: 
+        "tile1 tile2"
+        "tile3 tile2";
+
+    }
+    #about .tile-1{
+        grid-area: tile1;
+        
+    }
+    #about .tile-2{
+        grid-area: tile2;
+    }
+    #about .tile-3{
+       grid-area: tile3;
+
+    }
+       
+    #about .tile-2 img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
 }
