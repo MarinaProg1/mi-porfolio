@@ -39,7 +39,7 @@ p{
     text-align: center;
 }
 i{
-    color:black;
+    color:#143D60;
     font-size: 45px;
     font-weight: 400;
     text-align: center;
@@ -49,6 +49,9 @@ i:hover{
     font-size: 55px;
     color:crimson;   
    
+}
+div{
+    padding: 5px;
 }
 #menu{
     background-image: url(images/fondodistinto3.png);
@@ -258,15 +261,13 @@ grid-column: 2 /3;
 
 #posts .div-herramientas{
     grid-column: 1;
-    color:black;
     text-align:justify;
     padding: 5px;
 
 }
 #posts .div-bla{
     grid-column: 3;
-    color:black;
-    text-align:justify;
+    text-align:center;
     padding: 5px;
 
 }
@@ -286,11 +287,20 @@ grid-column: 2 /3;
     margin: 10px;
 
 }
+
 #projects .main-photo{
     grid-column: 1/5;
     grid-row: 1;
 
 }
+#projects .tile img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; /* opcional, si querés que tenga bordes redondeados */
+}
+
 
 /*..........*/
 #contact{
