@@ -342,8 +342,6 @@ grid-column: 2 /3;
         display: grid;
         grid-template-columns: 110px 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        padding: 10px;
         grid-template-areas: 
         "tile1 tile2"
         "tile3 tile2";
@@ -364,21 +362,63 @@ grid-column: 2 /3;
     #about .tile-2 img{
             width: 150px;
             height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
         }
-        i{
-            color:#143D60;
+        i{ 
             font-size: 40px;
             font-weight: 400;
-            text-align: center;
-            margin: 10px;
         }
         i:hover{
-            font-size: 45px;
-            color:crimson;   
+            font-size: 45px; 
            
         }
+        #posts{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-areas: 
+            "herramientas"
+            "habilidades"
+            "blandas";
+            
+        }
+        
+       #posts .div-herramientas{
+        grid-area: herramientas;
+       }
+        #posts .div-habilidades{
+            grid-area: habilidades;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-rows:130px 1fr 1fr 1fr 1fr;
+            align-items: center;
+            padding: 10px;
+        }
+        #posts .div-1{
+            grid-column: 1/ 3; 
+            grid-row: 1;
+        }
+        
+        #posts .div-2 { 
+            grid-column: 1;
+            grid-row: 2; 
+        }
+        #posts .div-3{ 
+            grid-column: 2; 
+            grid-row: 2; 
+        }
+        #posts .div-4{ grid-column: 1; grid-row: 3; }
+        #posts .div-5{ grid-column: 2; grid-row: 3; }
+        #posts .div-6{ grid-column: 1; grid-row: 4; }
+        #posts .div-7{ grid-column: 2; grid-row: 4; }
+        #posts .div-8{ grid-column: 1; grid-row: 5; }
+        #posts .div-9{ grid-column: 2; grid-row: 5; }
+        
+        #posts .div-bla{
+            grid-area: blandas;
+        }
+        
+       
 }
 @media (max-width:450px){
    
