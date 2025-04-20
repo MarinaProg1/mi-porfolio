@@ -295,7 +295,8 @@ grid-column: 2 /3;
     display: flex;
 }
 .form{
-    background-color:#C599B6;
+    background-image: url(images/fondodistinto3.png);
+    border-color: 2px solid black;
     width: 90%;
     margin: auto;
     max-width: 400px;
