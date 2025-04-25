@@ -202,13 +202,21 @@
         </div>
     </section>
     <section id="contact">
-           <form class="form">
+           <form action="https://formsubmit.co/marinalopez8080@gmail.com" method="POST" class="form">
               <div class="form-container">    
-                 <h2 class="form-title">Contáctame</h2>
-                 <input type="text" class="form-input" placeholder="Nombre:">
-                 <input type="email" class="form-input" placeholder="Email:">   
-                 <textarea class="form-container form-input--messaje" placeholder="Mensaje:"></textarea> 
-                 <input type="submit" value="Enviar" class="form-cta" >      
+                 <label for="Nombre">Nombre</label> 
+                 <input type="text" name="name">
+
+                 <label for="email">Correo electronico</label> 
+                 <input type="email" name="email">
+
+                 <label for="subject">Asunto</label> 
+                 <input type="text" name="subject">
+
+                 <label for="comments">Comentario</label> 
+                 <textarea type="comments" cols="15" rows="5"></textarea>
+
+                 <input type="submit" value="Enviar">
               </div>
            </form>
     </section>

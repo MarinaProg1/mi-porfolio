@@ -53,8 +53,9 @@ i:hover{
    
 }
 div{
-    padding: 5px;
+    padding: 8px;
 }
+
 #menu{
     background-image: linear-gradient(21deg,rgba(125, 139, 176, 1)0%,rgba(21, 21, 54, 0.96) 20%, rgba(8, 16, 33, 1) 40%, rgba(125, 139, 176, 1) 100%);
     background-size: cover;
@@ -267,15 +268,16 @@ div{
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 120px 1fr;
     align-items: center;
+    padding: 15px;
 }
-#projects .tile{
-    margin: 5px;
-}
-
 #projects .main-photo{
     grid-column: 1/5;
     grid-row: 1;
+ 
 
+}
+#projects .tile{
+    text-align: center;
 }
 #projects .tile img {
     width: 200px;
