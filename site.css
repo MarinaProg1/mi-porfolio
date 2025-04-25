@@ -26,7 +26,7 @@ h1{
 }
 h2{
     font-size: 25px;
-    color:black;
+    color:#f7f9fb;
     text-align: center;
     padding: 0px;
 }
@@ -109,6 +109,9 @@ div{
     border: 3px solid white; 
    
   
+}
+#menu .tile.flipped .front {
+    transform: translateY(-100%);
 }
 
 #menu .tile:hover .front{
@@ -294,7 +297,7 @@ div{
 }
 .form{
     background-image: url(images/fondodistinto3.png);
-    border: 2px solid black;
+    border: 2px solid darkviolet;
     width: 90%;
     margin: auto;
     max-width: 400px;
@@ -305,25 +308,29 @@ div{
     width: 100%;
     display: grid;
     gap: 1em;
-    grid-auto-columns: 100%;
+    grid-auto-columns: 95%;
 }
 .form-title{
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 13px;
     margin-bottom: .4em;
 }
-.form-input{
-   
+
+input{
     font-family:inherit;
-    font-size: 1rem;
-    padding: .8em 1em;
+    font-size: 13px;
+    padding: 5px 10px;
     outline: none;
-    border: none;
-    border: 1px solid #bbb0b0;
+    border: 1px solid darkviolet;
     border-radius: 5px;
 }
-.form-cta{
-    font-family:inherit;
+label{
+    font-size: 14px;
+}
+@media (hover: none) {
+    #menu .tile:hover .front {
+        transform: none; /* Anula hover en móviles */
+    }
 }
 
 @media (max-width:850px){
@@ -388,10 +395,7 @@ div{
             font-size: 40px;
             font-weight: 400;
         }
-        i:hover{
-            font-size: 45px; 
-           
-        }
+        
         #posts{
             display: grid;
             grid-template-columns: 1fr;
