@@ -26,7 +26,7 @@ h1{
 }
 h2{
     font-size: 25px;
-    color:#f7f9fb;
+    color:black;
     text-align: center;
     padding: 0px;
 }
@@ -36,6 +36,7 @@ h3{
     text-align: center;
 }
 p{
+    color: #bbb0b0;
     font-size: 13px;
     text-align: center;
 }
@@ -55,7 +56,7 @@ div{
     padding: 5px;
 }
 #menu{
-    background-image: linear-gradient(21deg,rgba(21, 21, 54, 0.96) 0%, rgba(8, 16, 33, 1) 35%, rgba(125, 139, 176, 1) 100%);
+    background-image: linear-gradient(21deg,rgba(125, 139, 176, 1)0%,rgba(21, 21, 54, 0.96) 20%, rgba(8, 16, 33, 1) 40%, rgba(125, 139, 176, 1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,29 +169,25 @@ div{
 /* +++++++*/
 
 #about {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    padding: 10px;
+    background-image: linear-gradient(21deg,rgba(21, 21, 54, 0.96) 0%, rgba(8, 16, 33, 1) 35%, rgba(125, 139, 176, 1) 100%);
+    text-align: center;
 }
 #about .tile{
     padding: 20px;
     box-sizing: border-box;
-    background-image: linear-gradient(21deg,rgba(21, 21, 54, 0.96) 0%, rgba(8, 16, 33, 1) 35%, rgba(125, 139, 176, 1) 100%);
     display: grid;
     align-items: center;
     justify-items: center;
     text-align: center;
     font-size: 13px;
 }
-#about .tile-1{
-grid-column: 1 / 2;
-
-}
-
 #about .tile-2{
-grid-column: 2 /3;
+    width: 1000px;
+    text-align: center;
+    border: 2px solid darkviolet;
+    margin: 10px 30px 10px 30px;
+    padding: 10px;
+    justify-self: center;
 }
 #about .tile-2 img{
     width: 180px;
@@ -267,12 +264,15 @@ grid-column: 2 /3;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 130px 1fr 1fr;
+    grid-template-rows: 100px 1fr;
     gap: 10px;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     margin: 10px;
 
+}
+#projects .tile{
+    margin: 10px;
 }
 
 #projects .main-photo{
