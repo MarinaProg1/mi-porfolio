@@ -3,6 +3,7 @@ body{
     font-optical-sizing: auto;
     font-weight:600; 
     font-style: normal;
+    color: #f7f9fb;
     padding: 0;
     margin: 0;
     letter-spacing: 1.5px;
@@ -47,23 +48,37 @@ i{
     text-align: center;
     margin: 10px;
 }
-i:hover{
+i:hover,i:focus{
     font-size: 55px;
     color:darkviolet;   
    
 }
 div{
     padding: 8px;
+    justify-content: center;
 }
-
+footer{
+    background-color: rgba(21, 21, 54, 0.96);
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    height: 40px;
+    width: 40px;
+}
 #menu{
     background-image: linear-gradient(21deg,rgba(125, 139, 176, 1)0%,rgba(21, 21, 54, 0.96) 20%, rgba(8, 16, 33, 1) 40%, rgba(125, 139, 176, 1) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: repeat(5, 150px);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(5, 160px);
+    grid-template-rows: repeat(4, 160px);
     justify-content: center;
     align-content: center;
     grid-template-areas: 
@@ -107,11 +122,7 @@ div{
     background-repeat: no-repeat;
     margin: 10px;
     border: 3px solid white; 
-   
   
-}
-#menu .tile.flipped .front {
-    transform: translateY(-100%);
 }
 
 #menu .tile:hover .front{
@@ -119,7 +130,7 @@ div{
 }
 
 #menu .tile .back{
-    background-color:rgba(125, 139, 176, 1);
+    background-color:rgba(21, 21, 54, 0.96);
     color:#f7f9fb;
     display: grid;
     justify-items: center;
@@ -326,12 +337,9 @@ input{
 }
 label{
     font-size: 14px;
+    color: black;
 }
-@media (hover: none) {
-    #menu .tile:hover .front {
-        transform: none; /* Anula hover en móviles */
-    }
-}
+
 
 @media (max-width:850px){
     #about .tile-2{
@@ -373,20 +381,29 @@ label{
    
 }
 
-@media (max-width:740px){
+@media (max-width:768px){
+    
+    
     #menu{
         grid-template-columns: 200px 200px 80px;
         grid-template-rows: repeat(3, 200px);
         grid-template-areas: 
         "about posts ."
         "projects contact redes"
-        "name name  ."
-       
+        "name name  ."   
     }
-    #about .tile-2{
-        width: 550px;
-        
+    #menu .tile .back {
+        font-size: 20px;
+    }  
+    #menu .about-tile .front,
+    #menu .projects-tile .front,
+    #menu .posts-tile .front,
+    #menu .contact-tile .front {
+    
+    opacity: 0.3; 
+   
     }
+    
     #about .tile-2 img{
             width: 150px;
             height: 150px;
@@ -442,7 +459,7 @@ label{
         #posts .div-bla{
             grid-area: blandas;
         }
-        
+       
        
 }
 @media (max-width:450px){
@@ -460,10 +477,10 @@ label{
         "name name  "
        
     }
-    #menu .tile .back{
-       
-        font-size: 20px;
-    }
+    #menu .tile .back {
+        font-size: 16px;
+    }  
+    
     #menu .social-tile{
         display: flex;
         
@@ -481,10 +498,8 @@ label{
      #posts .div-habilidades{
        display: flex;
        flex-direction: column;
-    
-        
+       
     }
-   
 
     #projects{
       display: flex;
