@@ -78,8 +78,8 @@ footer img{
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: repeat(5, 150px);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(4, 140px) 70px;
+    grid-template-rows: repeat(4, 140px);
     justify-content: center;
     align-content: center;
     grid-template-areas: 
@@ -117,12 +117,10 @@ footer img{
     align-items: center;
     z-index: 2;
     transition: transform 0.3s ease;
-   
     box-sizing: border-box;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-   
     border: 3px solid white; 
   
 }
@@ -130,6 +128,13 @@ footer img{
 #menu .tile:hover .front{
     transform: translateY(-100%); 
 }
+#menu .social-tile{
+    text-align:center;
+    background-color: rgba(8, 16, 33, 0.4);
+    border-radius: 40px;
+    margin-left: 30px;
+    padding-bottom: 20px;
+   }
 
 #menu .tile .back{
     background-color:rgba(21, 21, 54, 0.96);
@@ -485,7 +490,8 @@ label{
     
     #menu .social-tile{
         display: flex;
-        
+        text-align:right;
+        justify-items: center;
     }
     #about .tile-2{
         width: 350px;
