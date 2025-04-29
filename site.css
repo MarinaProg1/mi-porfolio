@@ -9,15 +9,12 @@ body{
     letter-spacing: 1.5px;
 
 }
-
-
 html{
     scroll-behavior: smooth;
 }
 section{
     min-height: 100vh;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 h1{
     font-size: 30px;
@@ -72,7 +69,7 @@ footer img{
     height: 40px;
     width: 40px;
 }
-#menu{
+#menu {
     background-image: linear-gradient(21deg,rgba(125, 139, 176, 1)0%,rgba(21, 21, 54, 0.96) 20%, rgba(8, 16, 33, 1) 40%, rgba(125, 139, 176, 1) 100%);
     background-size: cover;
     background-position: center;
@@ -83,21 +80,23 @@ footer img{
     justify-content: center;
     align-content: center;
     grid-template-areas: 
-    "about about posts posts ."
-    "about about projects projects ."
-    "about about contact contact redes"
-    "name name name name ."
-
+        "about about posts posts ."
+        "about about projects projects ."
+        "about about contact contact redes"
+        "name name name name .";
+    gap: 20px; /* <<< aquí agregas espacio entre celdas */
 }
-#menu .tile{
+
+#menu .tile {
     position: relative;
     height: 100%;
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-    margin-top: 30px;
-
+   
 }
+
+
 #menu .tile .front,
 #menu .tile .back {
     position: absolute;
@@ -145,9 +144,7 @@ footer img{
     z-index: 1;
     height: 100%;
     font-weight: bold;
-    font-size: 25px;
-    margin: 10px;
-   
+    font-size: 25px;   
 }
 #menu .about-tile .front{
     background-image: url(images/imagenflat2.png);
@@ -205,7 +202,7 @@ footer img{
     font-size: 13px;
 }
 #about .tile-2{
-    width: 890px;
+    width: 950px;
     text-align: center;
     border: 2px solid darkviolet;
     margin: 10px 30px 10px 30px;
