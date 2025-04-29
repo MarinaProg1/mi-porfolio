@@ -55,6 +55,14 @@ div{
     padding: 8px;
     justify-content: center;
 }
+.caja {
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: double;
+    border-left-style: double;
+  }
+  
+  
 footer{
     background-color: rgba(21, 21, 54, 0.96);
     display: flex;
@@ -120,12 +128,21 @@ footer img{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 3px solid white; 
+    /*border: 3px solid white;*/ 
+    cursor: pointer;
+    border-color: white;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: double;
+    border-left-style: double;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.9);
   
 }
 
 #menu .tile:hover .front{
     transform: translateY(-100%); 
+   
 }
 #menu .social-tile{
     text-align:center;
@@ -145,6 +162,7 @@ footer img{
     height: 100%;
     font-weight: bold;
     font-size: 25px;   
+    border-radius: 9px;
 }
 #menu .about-tile .front{
     background-image: url(images/imagenflat2.png);
