@@ -473,7 +473,7 @@ label{
      }
     #menu{
         grid-template-columns: 150px 150px;
-        grid-template-rows: 150px 150px 60px 60px;
+        grid-template-rows: 150px 150px 60px 160px;
         grid-template-areas: 
         "about posts "
         "projects contact"
@@ -487,8 +487,8 @@ label{
     
     #menu .social-tile{
         display: flex;
-        text-align:right;
-        justify-items: center;
+        margin: 5px;
+        
     }
     #about .tile-2{
         width: 350px;
