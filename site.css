@@ -333,7 +333,7 @@ footer img{
     display: flex;
 }
 .form{
-    background-image: url(images/fondodistinto3.png);
+    background-color: rgba(125, 139, 176, 1);
     border: 2px solid darkviolet;
     width: 90%;
     margin: auto;
