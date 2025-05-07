@@ -101,7 +101,8 @@ footer img{
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-   
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
 
 
