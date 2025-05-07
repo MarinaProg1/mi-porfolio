@@ -314,6 +314,10 @@ footer img{
 }
 #projects .tile{
     text-align: center;
+    padding: 15px 10px 15px 10px;
+    margin: 5px 20px 0px 20px;
+    border-radius: 5px;
+    border:2px solid darkviolet;
 }
 #projects .tile img {
     width: 200px;
