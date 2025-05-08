@@ -33,7 +33,7 @@ h2{
 }
 h3{
     font-size: 1.3rem;
-    color:black;
+    color:#f7f9fb;
     text-align: center;
 }
 p{
@@ -227,6 +227,8 @@ footer img{
     margin: 10px 30px 10px 30px;
     padding: 10px;
     justify-self: center;
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
+
 }
 #about .tile-2 img{
     width: 170px;
@@ -241,7 +243,7 @@ footer img{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
-    
+  
 }
 
 #posts .content-p{
@@ -264,6 +266,7 @@ footer img{
     align-items: center;
     padding: 10px;
     border: 2px solid darkviolet;
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
 }
 #posts .div-1{
     grid-column: 1/ 5; 
@@ -289,7 +292,8 @@ footer img{
     grid-column: 1;
     text-align:justify;
     padding: 5px;
-    border: 2px solid darkviolet;
+   border: 2px solid darkviolet;
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
 
 }
 #posts .div-bla{
@@ -297,6 +301,7 @@ footer img{
     text-align:justify;
     padding: 5px;
     border: 2px solid darkviolet;
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
 }
 /*...........*/
 #projects{
@@ -319,6 +324,7 @@ footer img{
     margin: 5px 20px 0px 20px;
     border-radius: 5px;
     border:2px solid darkviolet;
+    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
 }
 #projects .tile img {
     width: 200px;
@@ -333,12 +339,12 @@ footer img{
     display: flex;
 }
 .form{
-    background-color: rgba(125, 139, 176, 1);
+    background-color: rgba(21, 21, 54, 0.96);
     border: 2px solid darkviolet;
-    width: 90%;
+    width: 85%;
     margin: auto;
-    max-width: 400px;
-    padding: 10px;
+    max-width: 380px;
+    padding: 20px;
     border-radius: 5px;
 }
 .form-container{
@@ -362,7 +368,7 @@ input{
 }
 label{
     font-size: 0.75rem;
-    color: black;
+    color: white;
 }
 
 
