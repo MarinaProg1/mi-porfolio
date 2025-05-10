@@ -84,8 +84,8 @@ footer img{
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: repeat(4, 140px) 70px;
-    grid-template-rows: repeat(4, 140px);
+    grid-template-columns: repeat(4, 160px) 70px;
+    grid-template-rows: repeat(4, 160px);
     justify-content: center;
     align-content: center;
     grid-template-areas: 
@@ -137,7 +137,7 @@ footer img{
     border-bottom-style: double;
     border-left-style: double;
     border-radius: 8px;
-    box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
   
 }
 
@@ -164,6 +164,7 @@ footer img{
     font-weight: bold;
     font-size: 25px;   
     border-radius: 9px;
+   
 }
 #menu .about-tile .front{
     background-image: url(images/imagenflat2.png);
@@ -181,7 +182,6 @@ footer img{
     background-image: url(images/contact2.jpg);
     
 }
-
 
 .about-tile{
     grid-area: about;
@@ -227,9 +227,11 @@ footer img{
     margin: 10px 30px 10px 30px;
     padding: 10px;
     justify-self: center;
-    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
+    
 
 }
+
 #about .tile-2 img{
     width: 170px;
     height: 170px;
@@ -266,8 +268,9 @@ footer img{
     align-items: center;
     padding: 10px;
     border: 2px solid darkviolet;
-    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
 }
+
 #posts .div-1{
     grid-column: 1/ 5; 
     grid-row: 1;
@@ -293,42 +296,45 @@ footer img{
     text-align:justify;
     padding: 5px;
    border: 2px solid darkviolet;
-    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
 
 }
+
 #posts .div-bla{
     grid-column: 3;
     text-align:justify;
     padding: 5px;
     border: 2px solid darkviolet;
-    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
 }
+
 /*...........*/
 #projects{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 120px 1fr;
+    grid-template-rows: 110px 1fr;
     align-items: center;
     padding: 15px;
+  
 }
 #projects .main-photo{
     grid-column: 1/5;
     grid-row: 1;
- 
-
 }
 #projects .tile{
     text-align: center;
     padding: 15px 10px 15px 10px;
-    margin: 5px 20px 0px 20px;
+    margin: 60px 20px 5px 20px;
     border-radius: 5px;
     border:2px solid darkviolet;
-    box-shadow: 2px 2px 5px orange, -2px -2px 5px blue;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
 }
+
+
 #projects .tile img {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     object-fit: cover;
     border-radius: 5px; 
 }
@@ -341,12 +347,23 @@ footer img{
 .form{
     background-color: rgba(21, 21, 54, 0.96);
     border: 2px solid darkviolet;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
     width: 85%;
     margin: auto;
     max-width: 380px;
     padding: 20px;
     border-radius: 5px;
 }
+.form:hover,
+#projects .tile:hover,
+#posts .div-bla:hover,
+#posts .div-herramientas:hover,
+#posts .div-habilidades:hover,
+#about .tile-2:hover{
+    /*box-shadow: 2px 2px 20px orange, -2px -2px 20px blue;*/
+     box-shadow: 2px 2px 10px wheat, -2px -2px 10px wheat;
+}
+
 .form-container{
     width: 100%;
     display: grid;
@@ -421,7 +438,7 @@ label{
         grid-template-areas: 
         "about posts ."
         "projects contact redes"
-        "name name  ."   
+        "name name  ."  
     }
     #menu .tile .back {
         font-size: 20px;
@@ -514,7 +531,9 @@ label{
     
     #menu .social-tile{
         display: flex;
-        margin: 5px;
+        flex-direction: row;
+
+        padding: 10px;
         
     }
     #about .tile-2{
