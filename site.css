@@ -71,14 +71,20 @@ footer{
     flex-direction: row;
     height: 70px;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer img{
     height: 40px;
     width: 40px;
 }
+
+
+  footer > div {
+    flex: 1;
+    text-align: center; /* Centra el contenido de cada div */
+  }
 #menu {
     background-size: cover;
     background-position: center;

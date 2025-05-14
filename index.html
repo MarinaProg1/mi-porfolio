@@ -13,7 +13,7 @@
 </head>
 <body>
     <p>Porfolio en construcción...</p>
-   <p id="contador" style="display: none;">Visitas: 0</p>
+   
     <section id="menu">
         <div class="tile about-tile ">
             <a href="#about">
@@ -238,7 +238,7 @@
             <p>Goya Ctes</p>
             <p>Argentina</p>
         </di>
-       
+        <div style="text-align:start;"> <p id="contador" >Views: 0</p></div>
       </footer>
      
       <script>
@@ -252,7 +252,7 @@
   localStorage.setItem("contador", contador);
 
   // Actualizamos el elemento HTML con el nuevo valor
-  document.getElementById("contador").textContent = "Visitas: " + contador;
+  document.getElementById("contador").textContent = "Views: " + contador;
 </script>
 
 </body>
