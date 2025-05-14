@@ -13,6 +13,7 @@
 </head>
 <body>
     <p>Porfolio en construcción...</p>
+   <p id="contador">Visitas: 0</p>
     <section id="menu">
         <div class="tile about-tile ">
             <a href="#about">
@@ -240,6 +241,19 @@
        
       </footer>
      
+      <script>
+  // Variable para guardar el número de visitas (si no existe, iniciamos en 0)
+  let contador = localStorage.getItem("contador") || 0;
+
+  // Incrementamos el contador
+  contador++;
+
+  // Guardamos el contador en el localStorage (para persistir entre visitas)
+  localStorage.setItem("contador", contador);
+
+  // Actualizamos el elemento HTML con el nuevo valor
+  document.getElementById("contador").textContent = "Visitas: " + contador;
+</script>
 
 </body>
 </html>
