@@ -341,7 +341,7 @@ footer img{
 
 .slider {
   width: 400px;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
   position: relative;
 }
@@ -361,7 +361,7 @@ figure {
 
 .slide img {
   width: 400px;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   border-radius: 5px;
 }
