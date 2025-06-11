@@ -204,6 +204,7 @@ footer img{
 
 #about {
     text-align: center;
+   
   }
   
 #about .tile{
@@ -214,6 +215,8 @@ footer img{
     justify-items: center;
     text-align: center;
     font-size: 13px;
+     border-radius: 10px;
+    
 }
 #about .tile-2{
     width: 950px;
