@@ -83,8 +83,8 @@ footer img{
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
-    grid-template-columns: repeat(4, 130px) 70px;
-    grid-template-rows: repeat(4, 130px);
+    grid-template-columns: repeat(4, 140px) 70px;
+    grid-template-rows: repeat(4, 140px);
     justify-content: center;
     align-content: center;
     grid-template-areas: 
@@ -306,7 +306,10 @@ footer img{
     border: 2px solid darkviolet;
     box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
 }
-
+.icon{
+    width: 60px;
+    height: 60px;
+}
 
 /*...........*/
 #projects{
