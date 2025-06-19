@@ -32,6 +32,10 @@ h1{
     text-transform: uppercase;
     padding-bottom: 0px;
 }
+a{
+    text-decoration: none;
+    font-size: 0.9rem;
+}
 h2{
     font-size: 1.5rem;
     color:#f7f9fb;
@@ -69,7 +73,7 @@ footer{
     text-align: center;
     padding: 20px 0 20px 0;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
 }
 footer img{
     height: 40px;
@@ -167,7 +171,7 @@ footer img{
    
 }
 #menu .about-tile .front{
-    background-image: url(images/imagenflat2.png);
+    background-image: url(images/imagen-menu-about.png);
    
 }
 #menu .projects-tile .front{
@@ -223,7 +227,7 @@ footer img{
     
 }
 #about .tile-2{
-    width: 950px;
+    width: 1150px;
     padding: 10px;
     justify-self: center;
     box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
@@ -242,9 +246,9 @@ footer img{
 
 #posts{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 280px 600px 280px;
     grid-template-rows: 1fr;
-    margin: 5px;
+    
   
 }
 
@@ -257,7 +261,7 @@ footer img{
     text-align: center;
     font-size: 13px; 
     border-radius: 10px; 
-    margin: 5px 20px 5px 20px;
+    margin: 5px;
 }
 #posts .div-habilidades{
     grid-column: 2;
@@ -308,8 +312,8 @@ footer img{
     box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
 }
 .icon{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 /*...........*/
@@ -327,19 +331,20 @@ footer img{
 #projects .main-photo{
     grid-column: 1/3;
     grid-row: 1;
-    max-width: 1200px;
+    max-width: 1150px;
     border:2px solid darkviolet;
     box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
+    border-radius: 10px;
 }
 
 .covertura{
-    width: 500px;
+    width: 560px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centrado horizontal */
     align-items: center;   
-    border-radius: 5px;
+    border-radius: 10px;
     border: 2px solid darkviolet;
     box-shadow: 2px 2px 10px orange, -2px -2px 10px blue; 
 }
@@ -419,7 +424,7 @@ figure {
 #posts .div-herramientas:hover,
 #posts .div-habilidades:hover,
 #about .tile-2:hover{
-    /*box-shadow: 2px 2px 20px orange, -2px -2px 20px blue;*/
+
      box-shadow: 2px 2px 10px wheat, -2px -2px 10px wheat;
 }
 
@@ -498,7 +503,7 @@ label{
         #posts{
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-rows: 310px 2fr 310px;
             grid-template-areas: 
             "herramientas"
             "habilidades"
@@ -541,6 +546,11 @@ label{
         #posts .div-bla{
             grid-area: blandas;
         }
+        #projects{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
        footer{
         display: flex;
         flex-direction: column;
@@ -579,7 +589,7 @@ label{
     
     
     #about .tile-2{
-    width: 400px;
+    width: 380px;
     
    
 }
@@ -595,14 +605,16 @@ label{
        
     }
 
-    #projects{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    
+    #posts .div-bla,
+    #posts .div-herramientas{
+    height: 300px;
+    
+
+}
 
     .covertura{
-    width: 400px;
+    width: 380px;
     height: 300px;
     }
     .slider {
