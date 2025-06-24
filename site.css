@@ -502,7 +502,7 @@ label{
         
         #posts{
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 700px;
             grid-template-rows: 310px 2fr 310px;
             grid-template-areas: 
             "herramientas"
@@ -548,9 +548,13 @@ label{
         }
         #projects{
       display: flex;
+     
       flex-direction: column;
       gap: 10px;
     }
+       .covertura{
+         width: 700px;
+      }
        footer{
         display: flex;
         flex-direction: column;
@@ -599,6 +603,13 @@ label{
             border-radius: 50%;
             object-fit: cover;
      }
+     #posts{
+       display: grid;
+            grid-template-columns: 390px;
+            grid-template-rows: 350px 2fr 350px;
+            
+     }
+
      #posts .div-habilidades{
        display: flex;
        flex-direction: column;
@@ -608,7 +619,7 @@ label{
     
     #posts .div-bla,
     #posts .div-herramientas{
-    height: 300px;
+    height: 330px;
     
 
 }
