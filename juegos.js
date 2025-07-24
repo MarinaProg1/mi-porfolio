@@ -75,11 +75,19 @@ function validarCarta() {
     }, 1000);
   }
 
-    if(arreglocardsEncontradas.length == arregloCards.length){
+   if(contadorMovimientos< 21){
+
+     if(arreglocardsEncontradas.length == arregloCards.length){
         contenedor.innerHTML=''
         contador.classList.add('oculto')
         let mensaje = '<h3 id="mensaje">Felicitaciones, juego completado</h3>'
         contenedor.innerHTML = mensaje
         
     }
+
+   }else {
+    let mensaje = '<h3 id="mensaje">Superaste los 20 movimientos permitidos</h3>'
+        contenedor.innerHTML = mensaje
+   }
+   
 }
