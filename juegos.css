@@ -1,4 +1,5 @@
-html{
+body
+{
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -12,6 +13,7 @@ html{
 }
 p, h3{
   color: #fff;
+  text-align: center;
 }
 #iniciar-juego{
     background: transparent;
@@ -30,7 +32,9 @@ p, h3{
 #contenedor-juego{
   display: flex;
   flex-wrap: wrap;
-  width: 500px;
+  max-width: 500px;
+  justify-content: center;
+  text-align: center;
 }
 .oculto{
   display: none;
@@ -57,40 +61,23 @@ p, h3{
   width: 100px;
 }
 
-/* esto es una prueba para saber como funciona*/
-.contenedor {
-      perspective: 1000px; /* Activa la perspectiva 3D */
-      width: 200px;
-      height: 300px;
-    }
+@media (max-width:480px){
 
-    .carta {
-      width: 100%;
-      height: 100%;
-      transition: transform 0.8s;
-      transform-style: preserve-3d;
-      position: relative;
-    }
+  #contenedor-juego {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .card{
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+ 
+}
+.card img.oculta,
+.card img{
+  height: 80px;
+  width: 80px;
 
-    .contenedor:hover .carta {
-      transform: rotateY(180deg);
-    }
+}
 
-    .cara {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      backface-visibility: hidden;
-      border-radius: 8px;
-    }
-
-    .delantera {
-      background-image: url('images/SignoP.png');
-      background-size: cover;
-    }
-
-    .trasera {
-      background-image: url('images/c-sharp.png');
-      background-size: cover;
-      transform: rotateY(180deg);
-    }
+}
