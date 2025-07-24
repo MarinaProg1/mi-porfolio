@@ -1,0 +1,96 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(21deg,rgba(125, 139, 176, 1) 0%,rgba(21, 21, 54, 0.96) 30%, rgba(8, 16, 33, 1) 60%,rgba(21, 21, 54, 0.96) 80%,rgba(125, 139, 176, 1) 100%);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+p, h3{
+  color: #fff;
+}
+#iniciar-juego{
+    background: transparent;
+    border: 2px solid darkviolet;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
+    padding: 10px;
+}
+#iniciar-juego:hover{
+    color: orange;
+    box-shadow: 2px 2px 10px wheat, -2px -2px 10px wheat;
+}
+
+#contenedor-juego{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.oculto{
+  display: none;
+}
+.card{
+  height: 100px;
+  width: 100px;
+  background-color: #9786ab ;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.card img{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+.card img.oculta {
+  display: none;
+  height: 100px;
+  width: 100px;
+}
+
+/* esto es una prueba para saber como funciona*/
+.contenedor {
+      perspective: 1000px; /* Activa la perspectiva 3D */
+      width: 200px;
+      height: 300px;
+    }
+
+    .carta {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .contenedor:hover .carta {
+      transform: rotateY(180deg);
+    }
+
+    .cara {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 8px;
+    }
+
+    .delantera {
+      background-image: url('images/SignoP.png');
+      background-size: cover;
+    }
+
+    .trasera {
+      background-image: url('images/c-sharp.png');
+      background-size: cover;
+      transform: rotateY(180deg);
+    }
