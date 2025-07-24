@@ -75,7 +75,7 @@ function validarCarta() {
     }, 1000);
   }
 
-   if(contadorMovimientos< 21){
+   if(contadorMovimientos< 20){
 
      if(arreglocardsEncontradas.length == arregloCards.length){
         contenedor.innerHTML=''

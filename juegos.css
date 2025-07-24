@@ -40,11 +40,12 @@ p, h3{
   display: none;
 }
 .card{
-  height: 100px;
+  height: 120px;
   width: 100px;
-  background-color: #9786ab ;
+  background: radial-gradient(circle, #d4e445, #b19cac);
   margin: 10px;
   border-radius: 5px;
+  border: 2px solid #6d0f70;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,14 +69,14 @@ p, h3{
     padding: 10px;
   }
   .card{
-  height: 80px;
+  height: 100px;
   width: 80px;
   margin: 5px;
  
 }
 .card img.oculta,
 .card img{
-  height: 80px;
+  height: 100px;
   width: 80px;
 
 }
