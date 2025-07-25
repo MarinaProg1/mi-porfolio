@@ -15,7 +15,9 @@ const imagenes = [
   'images/css-3.png',
   'images/html.png',
   'images/java.png',
-  'images/php.png'
+  'images/php.png',
+  'images/science.png',
+  'images/letter-c.png'
 ];
 function iniciarJuego(){
   contenedor.innerHTML =''
@@ -75,7 +77,7 @@ function validarCarta() {
     }, 1000);
   }
 
-   if(contadorMovimientos< 20){
+   if(contadorMovimientos< 25){
 
      if(arreglocardsEncontradas.length == arregloCards.length){
         contenedor.innerHTML=''
@@ -86,7 +88,7 @@ function validarCarta() {
     }
 
    }else {
-    let mensaje = '<h3 id="mensaje">Superaste los 20 movimientos permitidos</h3>'
+    let mensaje = '<h3 id="mensaje">Superaste los 25 movimientos permitidos</h3>'
         contenedor.innerHTML = mensaje
    }
    
