@@ -22,7 +22,7 @@ p, h3{
     color: #fff;
     font-size: 16px;
     box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
-    padding: 10px;
+    padding: 8px;
 }
 #iniciar-juego:hover{
     color: orange;
