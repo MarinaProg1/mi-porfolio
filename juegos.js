@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", ()=>{
 var contenedor = document.getElementById('contenedor-juego');
 var boton = document.getElementById('iniciar-juego');
 var arregloCards = [];
@@ -6,6 +7,9 @@ var arreglocardsEncontradas = [];
 var contador = document.getElementById('contador-movimientos');
 let contadorMovimientos = 0;
 
+
+
+let cont=0;
 
 boton.addEventListener('click', iniciarJuego)
 
@@ -19,6 +23,7 @@ const imagenes = [
   'images/science.png',
   'images/letter-c.png'
 ];
+
 function iniciarJuego(){
   contenedor.innerHTML =''
   arregloCards = [];
@@ -93,3 +98,7 @@ function validarCarta() {
    }
    
 }
+
+});
+
+
