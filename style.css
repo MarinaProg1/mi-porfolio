@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Inter", "Inter Prevent Layout Shift", system-ui, sans-serif;
     color: #f0eeee;
     font-size: 16px;
     margin: 0;
@@ -60,6 +60,7 @@ margin: 10px;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 .dorso{
   background: aquamarine;
@@ -106,8 +107,8 @@ margin: 10px;
 /* ======================
    Estilo base
 ====================== */
-.glass, .redes{
-    position: absolute;
+
+.efecto{
     background: rgba(255,255,255, .1);
     box-shadow: 0 25px 45px rgba(0,0,0, .2);
     border-radius: 50px;
@@ -115,30 +116,41 @@ margin: 10px;
     border-right: 2px solid rgba(255,255,255,.2);   
     border-bottom: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(5px);
-    display: flex;
-    align-items: center;
-    
+
+}
+
+
+
+#start img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
 }
 .glass{
-    width: 85%;
+    width: 95%;
     height: 60px; 
+    position: relative;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
 }
 .redes{
     width: 70px;
     height: 150px;
     position: fixed;
     top: 40%;
-    left: 85%;
+    left: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
+
 nav{
-    width: 85%;
+    width: 95%;
     height: 60px;
-    position: fixed;  /* Se queda fijo en pantalla */
+    position: fixed;  
     top: 0;
     display: flex;
     justify-content: center;
@@ -163,29 +175,30 @@ a img{
     height: 35px;
 }
 .a-nav{
-    font-size: 1.4rem;
-    color: #85ec75;
+    font-size: 1.2rem;
+    color:#85ec75;
 }
 h1{
-   color:#226297;
-   font-size: 60px; 
+   font-weight: bold;
+   font-size: 3rem; 
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
    margin: 10px;
+   color: #226297;
 }
 h2{
    color:#226297;
-   font-size: 35px; 
+   font-size: 2rem; 
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
 }
 h3{
    color:#f0eeee;
-   font-size: 30px; 
+   font-size: 1.8rem; 
    padding: 5px;
    margin: 10px; 
 }
 
 footer{
-    background:#226297;
+    background:#4f6980;
     width: 100%;
     height: 180px;
     display: flex;
@@ -194,17 +207,7 @@ footer{
 }
 
 #start{
-    /* De arriba hacia abajo */
-/*background: linear-gradient(to bottom, #000, transparent);*/
-
-/* De abajo hacia arriba */
-/*background: linear-gradient(to top, #000, transparent);
-
-
-/*background: linear-gradient(to right, #000, transparent);*/
-
-background: linear-gradient(to left, #2b2929, transparent);
-
+    background: linear-gradient(to left, #2b2929, transparent);
     width: 100%;
     height: 100vh;
     padding-top: 40px;
@@ -213,17 +216,12 @@ background: linear-gradient(to left, #2b2929, transparent);
     justify-content: center;
     align-items: center;
 }
-#start img{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-}
+
 
 #sobre-mi{
     background: linear-gradient(to right, #2b2929, transparent);
     width: 100vw;
     height: 100vh;
-    padding: 0 25px 10px 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,27 +239,81 @@ background: linear-gradient(to left, #2b2929, transparent);
     align-items: center;
     padding-top: 35px;
 }
+#contact{
+    background: linear-gradient(to left, #2b2929, transparent);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.efecto{
+    background: rgba(255,255,255, .1);
+    box-shadow: 0 25px 45px rgba(0,0,0, .2);
+    border-radius: 50px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-right: 2px solid rgba(255,255,255,.2);   
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(5px);
+
+}
+.form{
+    background: #3a3939;
+    border: 1px solid #f1805a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    width: 30%;
+    border-radius: 10px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 90%;
+   
+}
 .content-hab{
-    max-width: 75%;
+    max-width: 80%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    gap: 5px;
+    gap: 20px;
 }
 .content-in{
-    margin-top: 70px;
-    width: 70%;
-    height: 100%;
-}
+    max-width: 70%;
+    height: 90%;
+    background: #3a3939;
+    border-radius: 10px;
+    border: 1px solid #f1805a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   }
 p{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+}
+.button{
+    background:linear-gradient(#85ec75,#226297);
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #000;
 }
  /*Botón hamburguesa */
 .toggle-btn {
-     display: none;
-     background: none;
+    display: none;
+    background: none;
     border: none;
     font-size: 28px;
     color: #85ec75; 
@@ -271,33 +323,96 @@ p{
     
 } 
 
-.glass {
-    position: relative;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    }
-
 .nav-list {
     display: flex ;
     flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     width: 100%;
     
     }
 
 .card-div{
+    background: #3a3939;
     width: 20%;
-    height: 170px;
-    padding: 2px;
-    
+    height: 230px;
+    padding: 15px 5px 5px 5px;
+    border-radius: 10px;
+    border: 1px solid #f1805a;
+ 
 }
 .card-div img{
     width: 50px;
     height: 50px;
 }
+
+.burbujas-container {
+  position: fixed;
+  left: 80px;   /* separación del borde iz */
+  bottom: 0;
+  width: 100px;  /* ancho de la columna de burbujas */
+  height: 100vh;
+  pointer-events: none; /* para que no interfiera con clics */
+
+}
+
+.burbuja {
+  position: absolute;
+  bottom: -70px; /* inicia fuera de la pantalla */
+  width: 60px;
+  opacity: 0.8;
+  animation: burbujear 9s linear infinite;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Animaciones para burbujas */
+@keyframes burbujear {
+  0% {
+    transform: translateX(0) translateY(0) scale(0.5);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateX(60px) translateY(-25vh) scale(0.7);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(-60px) translateY(-50vh) scale(0.8);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translateX(60px) translateY(-75vh) scale(0.9);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateX(-60px) translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Variaciones para cada burbuja */
+.burbuja:nth-child(1) { animation-duration: 6s; animation-delay: 0s; }
+.burbuja:nth-child(2) { animation-duration: 8s; animation-delay: 2s; }
+.burbuja:nth-child(3) { animation-duration: 7s; animation-delay: 1s; }
+.burbuja:nth-child(4) { animation-duration: 9s; animation-delay: 3s; }
+.burbuja:nth-child(5) { animation-duration: 6.5s; animation-delay: 4s; }
+.burbuja:nth-child(6) { animation-duration: 8.5s; animation-delay: 2.5s; }
+.burbuja:nth-child(7) { animation-duration: 7.5s; animation-delay: 5s; }
+.burbuja:nth-child(8) { animation-duration: 9.5s; animation-delay: 1.5s; }
+
 @media (max-width: 768px){
-    
+    footer{
+        flex-direction: column;
+        height: 100%;
+    }
+    #start{
+        height: 100%;
+    }
+    .redes{
+        display: none;
+    }
 .toggle-btn{
     display: flex;
 }
@@ -320,5 +435,17 @@ p{
 #sobre-mi{
     height: 100%;
 }
-
+.hidden{
+    display: none;
+}
+.form{
+    width: 78%;
+    margin: 10px;
+}
+#contact{
+    height: 100%;
+}
+.card-div{
+    height: 140px;
+}
 }

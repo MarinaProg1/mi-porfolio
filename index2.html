@@ -7,6 +7,9 @@
     <title>Mi Porfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v5/font/simple-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
     <meta property="og:title" content="Porfolio Marina López">
     <meta property="og:description"
         content="Programadora con experiencia en desarrollo de software con tecnologías como C#, C++, PHP, SQL y más.">
@@ -14,26 +17,56 @@
 
 <body>
     <nav class="content">
-        <div class="glass">
+        <div class="glass efecto">
             <button class="toggle-btn" aria-label="Abrir menú">&#9776;</button>
             <ul class="nav-list">
-                <li><a href="#start" class="a-nav">Inicio</a></li>
-                <li><a href="#sobre-mi" class="a-nav">Sobre mi</a></li>
-                <li><a href="#posts" class="a-nav">Habilidades</a></li>
-                <li><a href="#posts" class="a-nav">Proyectos</a></li>
-                <li><a href="#" class="a-nav">Contactame</a></li>
+                <li><a href="#start" class="a-nav"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="#sobre-mi" class="a-nav"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
+                <li><a href="#posts" class="a-nav"><i class="fa-solid fa-code"></i> Habilidades</a></li>
+                <li><a href="#posts" class="a-nav"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
+                <li><a href="#contact" class="a-nav"><i class="fa-solid fa-envelope"></i> Contáctame</a></li>
+
             </ul>
         </div>
     </nav>
 
     <section id="start">
-
-        <img src="images/imagen-about.jpg" alt="">
+        <img src="images/imagen-about.jpg" alt="mi imagen">
         <h1>Marina López</h1>
-        <h3> Desarrolladora de software</br> Técnica en programación </h3>
-
+        <h3>Técnica en programación </h3>
     </section>
-    <div class="redes">
+
+    <div class="burbujas-container">
+        <div class="burbuja efecto">
+            <img src="images/c-.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/c-.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/c-sharp.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/css-3.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/html.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/java.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/science.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/letter-c.png" alt="imagen de lenguaje">
+        </div>
+        <div class="burbuja efecto">
+            <img src="images/php.png" alt="imagen de lenguaje">
+        </div>
+    </div>
+
+    <div class="redes efecto">
         <a href="https://www.linkedin.com/in/marina-lopez-a257b9319" rel="noopener noreferrer" tarjet="_blank"
             aria-label="Enlace a linkedin de Marina López"><img src="images/linkedin.png"> </a>
         <a href="https://github.com/MarinaProg1" rel="noopener noreferrer" tarjet="_blank"
@@ -45,14 +78,19 @@
             <h2>SOBRE MI</h2>
 
             <p>Mi nombre es Marina López soy estudiante de la Tecnicatura en Programación de la Universidad
-                Tecnológica Nacional.<br><br>
+                Tecnológica Nacional.</p>
+            <p>
                 A lo largo de mi formación académica he trabajado con diferentes lenguajes de programación, como C,
                 C++, Java y PHP. Sin embargo, el lenguaje en el que tengo mayor experiencia y manejo es C#, ya que
                 con él he desarrollado proyectos más cercanos al ámbito profesional y con aplicaciones
-                prácticas.<br><br>
+                prácticas.
+            </p>
+            <p>
                 De manera autodidacta me encuentro ampliando mis conocimientos en HTML y CSS, enfocados en el
                 desarrollo web. Además, tengo experiencia trabajando con gestores de bases de datos como SQL Server
-                y MySQL.<br><br>
+                y MySQL.
+            </p>
+            <p>
                 Actualmente, sigo perfeccionando mis habilidades con el objetivo de integrarme a proyectos que me
                 permitan seguir creciendo profesionalmente y aportar valor con mis conocimientos técnicos y mi
                 compromiso con el aprendizaje continuo.</p>
@@ -67,42 +105,42 @@
             <div class="card-div">
                 <img class="icon" src="images/letter-c.png" alt="letra c">
                 <p>C</p>
-                <p>Conocimientos <b>básicos</b></p>
+                <p class="hidden">Conocimientos <b>básicos</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/c-.png" alt="c++">
                 <p>C++</p>
-                <p>Conocimientos <b>básicos.</b></p>
+                <p class="hidden">Conocimientos <b>básicos.</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/c-sharp.png" alt="c#">
                 <p>C#</p>
-                <p>Conocimientos <b>avanzado.</b></p>
+                <p class="hidden">Conocimientos <b>avanzado.</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/java.png" alt="java">
                 <p>Java</p>
-                <p>Conocimientos <b>básicos</b></p>
+                <p class="hidden">Conocimientos <b>básicos</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/php.png" alt="php">
                 <p>PHP</p>
-                <p>Conocimientos <b>intermedio</b></p>
+                <p class="hidden">Conocimientos <b>intermedio</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/html.png" alt="html">
                 <p>Html</p>
-                <p>Conocimientos <b>intermendio</b></p>
+                <p class="hidden">Conocimientos <b>intermendio</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/css-3.png" alt="css">
                 <p>CSS</p>
-                <p>Conocimientos <b>intermedio</b></p>
+                <p class="hidden">Conocimientos <b>intermedio</b></p>
             </div>
             <div class="card-div">
                 <img class="icon" src="images/science.png" alt="react">
                 <p>React</p>
-                <p>Conocimientos <b>intermedio</b></p>
+                <p class="hidden">Conocimientos <b>intermedio</b></p>
             </div>
         </div>
         </div>
@@ -153,7 +191,31 @@
             </div>
 
     </section>
+    <section id="contact">
+        <form action="https://formsubmit.co/83665ba2c67d1adb3a6ff6d594614991" method="POST" class="form">
+            <h2>Contáctame</h2>
+            <div class="form-container">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="name" id="Nombre" required>
 
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="subject">Asunto:</label>
+                <input type="text" name="subject" id="subject" required>
+
+                <label for="comments">Comentario:</label>
+                <textarea name="comments" cols="15" rows="5" id="commnents" required></textarea>
+
+                <input type="submit" value="Enviar" class="button">
+
+                <input type="hidden" name="_next" value="https://marinaprog1.github.io/mi-porfolio/gracias.html">
+
+                <input type="hidden" name="_captcha" value="false">
+
+            </div>
+        </form>
+    </section>
 
 
     <footer>
