@@ -20,19 +20,22 @@
         <div class="glass efecto">
             <button class="toggle-btn" aria-label="Abrir menú">&#9776;</button>
             <ul class="nav-list">
-                <li><a href="#start" class="a-nav"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a href="#sobre-mi" class="a-nav"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
-                <li><a href="#posts" class="a-nav"><i class="fa-solid fa-code"></i> Habilidades</a></li>
-                <li><a href="#posts" class="a-nav"><i class="fa-solid fa-diagram-project"></i> Proyectos</a></li>
-                <li><a href="#contact" class="a-nav"><i class="fa-solid fa-envelope"></i> Contáctame</a></li>
+                <li class="ho-font"><a href="#start" class="a-nav"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li class="ho-font"><a href="#sobre-mi" class="a-nav"><i class="fa-solid fa-user"></i> Sobre mí</a></li>
+                <li class="ho-font"><a href="#posts" class="a-nav"><i class="fa-solid fa-code"></i> Habilidades</a></li>
+                <li class="ho-font"><a href="#project" class="a-nav"><i class="fa-solid fa-diagram-project"></i>
+                        Proyectos</a></li>
+
+                <li class="ho-font"><a href="#contact" class="a-nav"><i class="fa-solid fa-envelope"></i> Contáctame</a>
+                </li>
 
             </ul>
         </div>
     </nav>
 
     <section id="start">
-        <img src="images/imagen-about.jpg" alt="mi imagen">
-        <h1><em>Marina López</em></h1>
+        <img src="images/imagen-about.jpg" alt="mi imagen" class="ho">
+        <h1>Marina López </h1>
         <h3>Técnica en programación </h3>
     </section>
 
@@ -74,7 +77,7 @@
     </div>
 
     <section id="sobre-mi">
-        <div class="content-in">
+        <div class="content-in ho">
             <h2>SOBRE MI
                 <img src="images/flor.png" alt="flor">
             </h2>
@@ -104,57 +107,57 @@
 
         <h2>HABILIDADES</h2>
         <div class="content-hab">
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/letter-c.png" alt="letra c">
                 <p>C</p>
                 <p class="hidden">Conocimientos<br> <strong>básicos</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/c-.png" alt="c++">
                 <p>C++</p>
                 <p class="hidden">Conocimientos<br> <strong>básicos.</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/c-sharp.png" alt="c#">
                 <p>C#</p>
                 <p class="hidden">Conocimientos<br> <strong>avanzado.</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/java.png" alt="java">
                 <p>Java</p>
                 <p class="hidden">Conocimientos<br> <strong>básicos</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/php.png" alt="php">
                 <p>PHP</p>
                 <p class="hidden">Conocimientos<br> <strong>intermedio</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/html.png" alt="html">
                 <p>Html</p>
                 <p class="hidden">Conocimientos<br> <strong>intermendio</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/css-3.png" alt="css">
                 <p>CSS</p>
                 <p class="hidden">Conocimientos<br> <strong>intermedio</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/science.png" alt="react">
                 <p>React</p>
                 <p class="hidden">Conocimientos<br> <strong>intermedio</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/js.png" alt="javascrip">
                 <p>javascrip</p>
                 <p class="hidden">Conocimientos<br> <strong>intermedio</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/sql-server.png" alt="javascrip">
                 <p>SQL Server</p>
                 <p class="hidden">Conocimientos<br> <strong>intermedio</strong></p>
             </div>
-            <div class="card-div">
+            <div class="card-div ho">
                 <img class="icon" src="images/mysql.png" alt="mysql">
                 <p>MySql</p>
                 <p class="hidden">Conocimientos<br> <strong>intermedio</strong></p>
@@ -164,15 +167,67 @@
     </section>
 
     <section id="project">
+
         <h2>PROYECTOS</h2>
-        <div class="content-pro">
-
-
-        </div>
+        <div class="pro">
+            <div class="content-pro">
+                <p>Api C#</p>
+                <div class="card-pro">
+                    <img class="frente" src="images/api3.png" alt="Imagende Api c#">
+                    <div class="dorso">
+                        <p>API REST en .NET con JWT y SQL Server
+                            Desarrollo de API en C# / .NET con base de datos SQL Server, implementando autenticación y
+                            autorización mediante JSON Web Tokens (JWT) y documentación interactiva con Swagger.</p>
+                    </div>
+                </div>
+                <a class="a-nav" href="https://github.com/MarinaProg1" rel="noopener noreferrer" tarjet="_blank"
+                    aria-label="Enlace a la repositorio de git Hub"> <img src="images/github.png"></a>
+            </div>
+            <div class="content-pro">
+                <p>Web C#</p>
+                <div class="card-pro">
+                    <img class="frente" src="images/web1.png" alt="Imagende Api c#">
+                    <div class="dorso">
+                        <p>Desarrollo de aplicación web en ASP.NET Core MVC que consume datos desde una API propia
+                            mediante peticiones HTTP. Implementación de vistas con HTML5, CSS3 y Bootstrap, integrando
+                            lógica de negocio para mostrar, filtrar y gestionar la información obtenida desde el
+                            backend.</p>
+                    </div>
+                </div>
+                <a class="a-nav" href="https://github.com/MarinaProg1" rel="noopener noreferrer" tarjet="_blank"
+                    aria-label="Enlace a la repositorio de git Hub"> <img src="images/github.png"></a>
+            </div>
+            <div class="content-pro">
+                <p>Web PHP</p>
+                <div class="card-pro">
+                    <img class="frente" src="images/web-php1.png" alt="Imagende Api c#">
+                    <div class="dorso"> Detalles del proyecto</div>
+                </div>
+                <a class="a-nav" href="https://github.com/MarinaProg1" rel="noopener noreferrer" tarjet="_blank"
+                    aria-label="Enlace a la repositorio de git Hub"> <img src="images/github.png"></a>
+            </div>
+            <div class="content-pro">
+                <p>Web React</p>
+                <div class="card-pro">
+                    <img class="frente" src="images/web-gla2.png" alt="Imagende Api c#">
+                    <div class="dorso"> Detalles del proyecto</div>
+                </div>
+                <a class="a-nav" href="https://github.com/MarinaProg1" rel="noopener noreferrer" tarjet="_blank"
+                    aria-label="Enlace a la repositorio de git Hub"> <img src="images/github.png"></a>
+            </div>
+            <div class="content-pro">
+                <p>Api C#</p>
+                <div class="card-pro">
+                    <img class="frente" src="images/api3.png" alt="Imagende Api c#">
+                    <div class="dorso"> Detalles del proyecto</div>
+                </div>
+                <a class="a-nav" href="https://github.com/MarinaProg1" rel="noopener noreferrer" tarjet="_blank"
+                    aria-label="Enlace a la repositorio de git Hub"> <img src="images/github.png"></a>
+            </div>
     </section>
 
     <section id="contact">
-        <form action="https://formsubmit.co/83665ba2c67d1adb3a6ff6d594614991" method="POST" class="form">
+        <form action="https://formsubmit.co/83665ba2c67d1adb3a6ff6d594614991" method="POST" class="form ho">
             <h2>Contáctame</h2>
             <div class="form-container">
                 <label for="Nombre">Nombre:</label>

@@ -4,12 +4,11 @@
 }
 
 body{
-    font-family:sans-serif;
-    background-image: url(images/fondo-3.jpg);
-    background-position: fixed;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    background-image:linear-gradient(to top, rgb(30, 35, 38, .2), rgb(30, 35, 38, .2)), url(images/fondo-3.jpg);
     background-repeat:no-repeat ;
     background-size: cover;
-    background-position: fixed;
     color: #f0eeee;
     font-size: 16px;
     margin: 0;
@@ -20,7 +19,6 @@ body{
     align-items: center;
     letter-spacing: 1px;
 }
-
 .efecto{
     background: rgba(255,255,255, .1);
     box-shadow: 0 25px 45px rgba(0,0,0, .2);
@@ -31,7 +29,13 @@ body{
     backdrop-filter: blur(5px);
 
 }
-
+.ho:hover{
+    border: 2px solid darkviolet;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
+}
+.ho-font:hover{
+    text-shadow: 2px 2px 10px darkviolet, -2px -2px 10px blue;;
+}
 .glass{
     width: 95%;
     height: 60px; 
@@ -77,18 +81,16 @@ a img{
     height: 35px;
 }
 .a-nav{
-
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   font-size: 1.2rem;
   color:white;
 }
 .a-nav:hover{
- transform: scale(1.2);
- color:#e45222;
- background: #a2a5a7;
- padding: 2px 8px;
- border-radius: 20px;
+  transform: scale(1.2);
+  color:#e45222;
+  padding: 2px 8px;
+  border-radius: 20px;
 }
 h1{
    font-weight: bold;
@@ -110,7 +112,7 @@ h3{
 }
 
 footer{
-    background:#000002;
+    background:#1b1b1b;
     width: 100%;
     height: 180px;
     display: flex;
@@ -118,8 +120,7 @@ footer{
     align-items: center;
 }
 
-#start{
-   
+#start{   
     width: 100%;
     height: 100vh;
     padding-top: 40px;
@@ -133,7 +134,6 @@ footer{
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  border: 1px solid #f1805a;
 }
 
 #sobre-mi{
@@ -148,21 +148,83 @@ footer{
 
 #posts{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 35px;
 }
-#project{
+
+#project {
     width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+   
+}
+.pro{
+    max-width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.content-pro {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px; /* profundidad para el giro */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.card-pro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* permite 3D */
+    transition: transform 0.6s ease;
+}
+
+.content-pro:hover .card-pro {
+    transform: rotateY(180deg); /* gira al hacer hover */
+}
+
+.frente, .dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* oculta la cara trasera */
+    border-radius: 10px;
+}
+
+.frente {
+    background: #fff;
+}
+
+.frente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dorso {
+    background:#001648;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 10px;
+    transform: rotateY(180deg); /* dorso inicia al revés */
+}
+
 #contact{
     width: 100vw;
     height: 100vh;
@@ -175,7 +237,6 @@ footer{
 
 .form{
     background: #001648;
-    border: 1px solid #f1805a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +253,7 @@ footer{
    
 }
 .content-hab{
-    max-width: 80%;
+    max-width: 70%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -205,16 +266,15 @@ footer{
     height: 90%;
     background: #001648;
     border-radius: 10px;
-    border: 1px solid #f1805a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 70px;
+    padding: 10px 30px;
    }
    .content-in h2 img {
-     width: 60px;
-     height: 60px;
+     width: 45px;
+     height: 45px;
    }
 p{
     font-size: 1rem;
@@ -255,9 +315,7 @@ p{
     width: 20%;
     height: 200px;
     padding: 15px 5px 5px 5px;
-    border-radius: 10px;
-    border: 1px solid #f1805a;
- 
+    border-radius: 10px; 
 }
 .card-div img{
     width: 50px;
@@ -266,11 +324,11 @@ p{
 
 .burbujas-container {
   position: fixed;
-  left: 80px;   /* separación del borde iz */
+  left: 80px; 
   bottom: 0;
-  width: 100px;  /* ancho de la columna de burbujas */
+  width: 100px;  
   height: 100vh;
-  pointer-events: none; /* para que no interfiera con clics */
+  pointer-events: none; 
 
 }
 
@@ -338,65 +396,82 @@ p{
   }
 }
 
+
+
 @media (max-width: 768px){
     footer{
         flex-direction: column;
         height: 100%;
     }
-    #start{
-        height: 100%;
+
+
+    h1{
+    font-size: 2.5rem; 
     }
+    h2{
+    font-size: 1.8rem;
+    }
+    h3{
+    font-size: 1.5rem;  
+    }
+
     .content-in{
         width: 100%;
+        padding: 10px ;
     }
+    .content-in h2 img {
+     width: 30px;
+     height: 30px;
+   }
     .redes{
         display: none;
     }
-.toggle-btn{
+    .toggle-btn{
+        display: flex;
+    }
+    .nav-list {
+        display: none;
+        
+    }
+    .glass{
+        align-items:start;
+
+    }
+
+    .nav-list.active {
+    margin-right: -60px;
     display: flex;
-}
-.nav-list {
-    display: none;
-    
-}
-.glass{
-    align-items:start;
-
-}
-
-.nav-list.active {
-  margin-right: -60px;
-   display: flex;
-   flex-direction: column;
-   background: rgba(8, 8, 8, 0.2);
-   width: 80vh;
-   height: 85vh;
-   gap:10px;
-}
-#sobre-mi{
-    height: 100%;
-}
-#posts{
-    height: 100%;
-    width: 100%;
-    padding-top: 20px;
-}
-.hidden{
-    display: none;
-}
-.form{
-    width: 78%;
-    margin: 10px;
-}
-#contact{
-    height: 100%;
-}
-.card-div{
-    height: 120px;
-}
-.burbujas-container{
-    display: none;
-}
+    flex-direction: column;
+    background: rgba(8, 8, 8, 0.2);
+    width: 80vh;
+    height: 85vh;
+    gap:10px;
+    }
+    #sobre-mi{
+        height: 100%;
+    }
+    #posts{
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .hidden{
+        display: none;
+    }
+    .form{
+        width: 78%;
+        margin: 10px;
+    }
+    #contact{
+        height: 100%;
+    }
+    .card-div{
+        width: 85%;
+        height: 120px;
+    }
+    .burbujas-container{
+        display: none;
+    }
 }
 
 
