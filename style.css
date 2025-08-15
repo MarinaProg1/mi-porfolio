@@ -44,16 +44,18 @@ body{
     justify-content: center;
     align-items: center;
 }
+.dis-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .redes{
     width: 70px;
     height: 150px;
     position: fixed;
     top: 40%;
-    left: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    left: 90%; 
     gap: 10px;
 }
 
@@ -124,10 +126,6 @@ footer{
     width: 100%;
     height: 100vh;
     padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 #start img {
@@ -139,29 +137,17 @@ footer{
 #sobre-mi{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
 #posts{
     width: 100vw;
     height: 120vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 35px;
 }
 
 #project {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-top: 70px;
    
 }
@@ -175,7 +161,7 @@ footer{
 }
 .content-pro {
     width: 300px;
-    height: 300px;
+    height: 280px;
     perspective: 1000px; /* profundidad para el giro */
     display: flex;
     flex-direction: column;
@@ -217,22 +203,27 @@ footer{
 .dorso {
     background:#001648;
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 18px;
     padding: 10px;
     transform: rotateY(180deg); /* dorso inicia al revés */
 }
-
+.dorso ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.dorso ul li{
+    border: 1px solid #226297;
+    color: #868686;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8rem;
+}
 #contact{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    gap: 20px;
+    
 }
 
 .form{
@@ -244,6 +235,7 @@ footer{
     padding: 10px 20px 10px 20px;
     width: 30%;
     border-radius: 10px;
+   
 }
 .form-container{
     display: flex;
@@ -312,7 +304,7 @@ p{
 
 .card-div{
     background: #001648;
-    width: 20%;
+    width: 21%;
     height: 200px;
     padding: 15px 5px 5px 5px;
     border-radius: 10px; 
@@ -341,6 +333,13 @@ p{
   padding: 10px;
   display: flex;
   align-items: center;
+}
+.cv{
+   text-align:center;
+   border: 1px solid #001648;
+   border-radius: 10px;
+   padding: 10px;
+   
 }
 
 /* Animaciones para burbujas */
@@ -473,7 +472,3 @@ p{
         display: none;
     }
 }
-
-
-
-
