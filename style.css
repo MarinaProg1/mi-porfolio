@@ -100,6 +100,7 @@ h1{
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
    margin: 10px;
    color:#e45222;
+   letter-spacing: 4px;
 }
 h2{
    color:#e45222;
@@ -110,7 +111,8 @@ h3{
    color:#f0eeee;
    font-size: 1.8rem; 
    padding: 5px;
-   margin: 10px; 
+   margin: 10px;
+   letter-spacing: 2px; 
 }
 
 footer{
@@ -218,6 +220,7 @@ footer{
     border-radius: 5px;
     padding: 5px;
     font-size: 0.8rem;
+    background: rgba(57, 70, 78, 0.2);
 }
 #contact{
     width: 100vw;
@@ -320,8 +323,12 @@ p{
   bottom: 0;
   width: 100px;  
   height: 100vh;
-  pointer-events: none; 
-
+}
+.burbujas-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* fondo del contenedor no capta eventos */
 }
 
 .burbuja {
@@ -330,16 +337,30 @@ p{
   width: 60px;
   opacity: 0.8;
   animation: burbujear 9s linear infinite;
+  transition: opacity 0.9s ease;
   padding: 10px;
   display: flex;
   align-items: center;
+  pointer-events: auto;
 }
+.burbuja .efecto:hover,
+.burbuja:hover,
+.burbuja:hover img {
+  opacity: 0;
+  display: none;
+  
+}
+
 .cv{
    text-align:center;
-   border: 1px solid #001648;
+   border: 2px solid #001648;
    border-radius: 10px;
    padding: 10px;
+   background: rgba(57, 70, 78, 0.2);
    
+}
+.cv a:hover{
+ font-size: 1.2rem;
 }
 
 /* Animaciones para burbujas */
