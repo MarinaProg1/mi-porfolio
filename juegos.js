@@ -140,7 +140,7 @@ function iniciarJuegoBurbujas(){
 
   const burbujasContainer = document.getElementById('burbujas-container');
   burbujasContainer.innerHTML = ''; 
-  burbujasTerminadas = 0; // reset
+  burbujasTerminadas = 0; 
 
   let puntajes = [1, 2, 3, 5, 10, 15, 20, 50];
   
