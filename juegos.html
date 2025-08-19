@@ -10,10 +10,33 @@
 
 <body>
 
-    <button id="iniciar-juego">Iniciar juego</button>
-    <p id="contador-movimientos" class="oculto">Movimientos: 0</p>
+    <button id="iniciar-juego1">Iniciar Juego de memoria</button>
 
-    <div id="contenedor-juego"></div>
+
+    <button id="iniciar-juego2">Iniciar Juego de burbujas</button>
+
+
+    <div id="contenedor-juego1" class="oculto">
+        <p id="contador-movimientos" class="oculto">Movimientos: 0</p>
+        <div id="tablero"></div>
+    </div>
+
+
+    <div id="contenedor-juego2" class="oculto">
+
+        <div id="acumulador-puntos" class="oculto">Puntos acumulados: 0</div>
+        <div id="burbujas-container"></div>
+
+        <div id="mensaje-final" class="oculto">
+            <p id="texto-mensaje"></p>
+            <button id="btn-reiniciar">Reiniciar juego</button>
+            <button id="btn-inicio">Ir al inicio</button>
+        </div>
+    </div>
+
+
+    </div>
+
 
     <script src="juegos.js" defer></script>
 </body>
