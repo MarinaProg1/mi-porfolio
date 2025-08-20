@@ -4,6 +4,7 @@ const tablero = document.getElementById('tablero');
 const contenedorJuego2 = document.getElementById('contenedor-juego2');
 const botonMemo = document.getElementById('iniciar-juego1');
 const botonBurbujas = document.getElementById('iniciar-juego2');
+const contenButton = document.getElementsByClassName('content-button')
 
 var contador = document.getElementById('contador-movimientos');
 var acumulador = document.getElementById('acumulador-puntos');
@@ -76,10 +77,12 @@ function iniciarJuegoMemoria(){
 function ocultarBotones(){
  botonMemo.classList.add('oculto');
   botonBurbujas.classList.add('oculto');
+
 }
 function mostrarBotones(){
   botonMemo.classList.remove('oculto');
   botonBurbujas.classList.remove('oculto');
+  
 }
 function voltearCarta() {
   if (arregloCardsVolteadas.length < 2 && 
