@@ -369,6 +369,7 @@ p{
 
 .modal-contenido {
   background:#181833;
+  color: #e45222;
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -441,8 +442,6 @@ p{
         flex-direction: column;
         height: 100%;
     }
-
-
     h1{
     font-size: 2.5rem; 
     }
@@ -452,7 +451,6 @@ p{
     h3{
     font-size: 1.5rem;  
     }
-
     .content-in{
         width: 100%;
         padding: 10px ;
@@ -475,8 +473,7 @@ p{
     .glass{
         align-items:start;
 
-    }
-    
+    } 
     .nav-list.active {
     margin-right: -60px;
     display: flex;
