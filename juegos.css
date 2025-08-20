@@ -12,7 +12,11 @@ body{
     font-size: 16px;
     margin: 0;
     padding: 0;
-    display: flex;
+    
+}
+main{
+  min-height: 90vh;
+  display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,7 +114,7 @@ button:hover{
   width: 85%;
   height: 85%;
   overflow: hidden;
-   background: #6d0f70;
+  border: 1px solid  #6d0f70;
 }
 #acumulador-puntos {
   position: absolute;
