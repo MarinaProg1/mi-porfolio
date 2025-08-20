@@ -368,12 +368,13 @@ p{
 }
 
 .modal-contenido {
-  background: #fff;
+  background:#181833;
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   font-size: 18px;
   text-align: center;
+  
 }
 
 .oculto {
