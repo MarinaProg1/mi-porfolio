@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-     form.addEventListener("submit", function (e) {
+     
+    form.addEventListener("submit", function (e) {
     e.preventDefault(); // Evita redirección inmediata
 
     const formData = new FormData(form);
