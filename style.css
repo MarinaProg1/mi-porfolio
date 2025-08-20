@@ -118,10 +118,7 @@ footer{
     justify-content: space-around;
     align-items: center;
 }
-.juegos{
-    color: #868686;
-    font-size: 1.2rem;
-}
+
 #start{   
     width: 100%;
     height: 100vh;
@@ -352,7 +349,10 @@ p{
 .cv a:hover{
  font-size: 1.2rem;
 }
-
+.juego a {
+  color: #b19cac;
+  font-size: 1.2rem;
+}
 /* Animaciones para burbujas */
 @keyframes burbujear {
   0% {

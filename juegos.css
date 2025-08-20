@@ -25,7 +25,7 @@ button{
     background: transparent;
     border: 2px solid darkviolet;
     width: 200px;
-    height: 200px;
+    height: 100px;
     border-radius: 8px;
     color: #fff;
     font-size: 16px;
@@ -176,6 +176,10 @@ footer{
 footer img{
   width: 40px;
   height: 40px;
+}
+.juego a {
+  color: #b19cac;
+  font-size: 1.2rem;
 }
 /* Movimiento hacia arriba con oscilación */
 @keyframes flotarOndulante {
