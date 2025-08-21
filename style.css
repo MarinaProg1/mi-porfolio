@@ -369,6 +369,7 @@ p{
 .modal-contenido {
   background:#181833;
   color: #e45222;
+  border-color: 1px solid #e45222;
   padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
