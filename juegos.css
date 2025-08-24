@@ -179,6 +179,7 @@ footer{
     display: flex;
     justify-content:space-around;
     align-items: center;
+    
 }
 footer img{
   width: 40px;
@@ -188,6 +189,26 @@ footer img{
   color: #b19cac;
   font-size: 1.2rem;
 }
+
+.puntos-flotantes{
+  position: absolute;
+  color:#0c0c0c;
+  top: -12px;
+  left: 50%;
+  font-size: 1.8rem;
+  transform: translateX(-50%);
+  font-weight: 700;
+  animation: subirYDesvanecer 1s ease-out forwards;
+  pointer-events: none;         
+  text-shadow: 0 1px 2px rgba(0,0,0,.25);
+   z-index: 9999;
+}
+
+@keyframes subirYDesvanecer{
+  from { opacity: 1; transform: translate(-50%, 0); }
+  to   { opacity: 0; transform: translate(-50%, -20px); }
+}
+
 /* Movimiento hacia arriba con oscilación */
 @keyframes flotarOndulante {
   0% {

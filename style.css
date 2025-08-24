@@ -83,6 +83,14 @@ a img{
   font-size: 1.2rem;
   color:white;
 }
+.a-codigo{
+    font-size: 0.9rem;
+    color: #b19cac;
+}
+.a-codigo:hover{
+    font-size: 1.1rem;
+    color: #e45222;
+}
 .a-nav:hover{
   transform: scale(1.2);
   color:#e45222;
@@ -91,7 +99,7 @@ a img{
 }
 h1{
    font-weight: bold;
-   font-size: 3rem; 
+   font-size: 3.4rem; 
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
    margin: 10px;
    color:#2250bb;
@@ -244,7 +252,7 @@ footer{
 }
 .content-in{
     max-width: 70%;
-    height: 90%;
+    height: 85%;
     background: rgba(255,255,255,.1);
     border-radius: 10px;
     display: flex;

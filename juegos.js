@@ -47,6 +47,17 @@ const imagenes = [
   'images/letter-c.png'
 ];
 
+const puntajePorImagen = {
+  'images/c-.png': 20,
+  'images/c-sharp.png': 35,  
+  'images/css-3.png': 30,
+  'images/html.png': 12,
+  'images/java.png': 15,
+  'images/php.png': 5,
+  'images/science.png': 25,
+  'images/letter-c.png': 10
+};
+
 function iniciarJuegoMemoria(){
   tablero.innerHTML ='';
   arregloCards = [];
@@ -145,12 +156,10 @@ function iniciarJuegoBurbujas(){
   burbujasContainer.innerHTML = ''; 
   burbujasTerminadas = 0; 
 
-  let puntajes = [1, 2, 3, 5, 10, 15, 20, 50];
-  
   for (let i = 0; i < totalBurbujas; i++) {
-    let burbuja = document.createElement('div');
+    const burbuja = document.createElement('div');
     burbuja.classList.add('burbuja', 'efecto');
-    
+
     // al terminar la animación
     burbuja.addEventListener("animationend", ()=>{
       burbuja.remove();
@@ -158,59 +167,48 @@ function iniciarJuegoBurbujas(){
       verificarFin();
     });
 
+    // posicionamiento/velocidad
     burbuja.style.left = (40 + Math.random() * 20) + "%";
     burbuja.style.transform = "translateX(-50%)";
     burbuja.style.animationDuration = (4 + Math.random() * 3) + "s"; 
-    
-    let img = document.createElement('img');
-    let src = imagenes[Math.floor(Math.random() * imagenes.length)];
+
+    // imagen + puntaje fijo
+    const img = document.createElement('img');
+    const src = imagenes[Math.floor(Math.random() * imagenes.length)];
     img.src = src;
     img.alt = "imagen de lenguaje";
     img.style.width = "40px";
     img.style.height = "40px";
 
+    // NUEVO: guardar el puntaje fijo en data-puntos
+    const puntosFijos = puntajePorImagen[src] ?? 0;
+    img.dataset.puntos = String(puntosFijos);
+
     burbuja.appendChild(img);
     burbujasContainer.appendChild(burbuja);
 
-    let puntos = puntajes[Math.floor(Math.random() * puntajes.length)];
-
+    // click en la burbuja
     burbuja.addEventListener("click", ()=>{
+      const puntos = Number(img.dataset.puntos) || 0;  // ← puntaje fijo
       acumuladorPuntos += puntos;
       acumulador.textContent = `Puntos acumulados: ${acumuladorPuntos}`;
-      
-      let flotante = document.createElement("span");
+
+      // “+10” flotante por 1 segundo
+      const flotante = document.createElement("span");
       flotante.textContent = `+${puntos}`;
       flotante.classList.add("puntos-flotantes");
       burbuja.appendChild(flotante);
+      setTimeout(()=> flotante.remove(), 4000);
 
-      setTimeout(()=> flotante.remove(), 1000);
-
-      burbuja.remove(); 
-      burbujasTerminadas++;
-      verificarFin();
+      setTimeout(()=> {
+    burbuja.remove();
+    burbujasTerminadas++;
+    verificarFin();
+  }, 4000); //
     });
   }
 }
 
-function verificarFin(){
-  if (burbujasTerminadas >= totalBurbujas){
-    const mensajeFinal = document.getElementById("mensaje-final");
-    const textoMensaje = document.getElementById("texto-mensaje");
-    textoMensaje.textContent = `🎉 ¡Felicitaciones, has logrado ${acumuladorPuntos} puntos! 🎉`;
-    mensajeFinal.classList.remove("oculto");
-
-    document.getElementById("btn-reiniciar").onclick = ()=>{
-      mensajeFinal.classList.add("oculto");
-      iniciarJuegoBurbujas();
-    };
-
-    document.getElementById("btn-inicio").onclick = ()=>{
-      mensajeFinal.classList.add("oculto");
-      contenedorJuego2.style.display = "none";
-      mostrarBotones();
-    };
-  }
-}
 
 
 
