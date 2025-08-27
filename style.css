@@ -104,7 +104,7 @@ h1{
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
    margin: 10px;
    /*color:#2250bb;*/
-   background: linear-gradient(90deg,#2250bb,  #88bde9,#688adb);
+   background: linear-gradient(90deg,#2250bb,  #88bde9,#2250db);
   background-clip: text;             
   -webkit-background-clip: text;     
   -webkit-text-fill-color: transparent;
@@ -353,15 +353,18 @@ p{
 }
 
 .cv{
-   text-align:center;
-   border: 2px solid #001648;
+ 
    border-radius: 10px;
    padding: 10px;
    background: rgba(255, 255, 255, 0.027);
     box-shadow: 8px 8px 15px rgba(0,0,0, .5);
+    display: inline-block;
 }
 .cv a{
     color: #f0eeee;
+     display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .cv a:hover{
  font-size: 1.2rem;
