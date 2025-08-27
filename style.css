@@ -84,12 +84,13 @@ a img{
   color:white;
 }
 .a-codigo{
-    font-size: 0.9rem;
-    color: #b19cac;
+    font-size: 0.7rem;
+    color: #5c6bc0;
+    grid-area: 5px;
 }
 .a-codigo:hover{
-    font-size: 1.1rem;
-    color: #e45222;
+    font-size: 1rem;
+   
 }
 .a-nav:hover{
   transform: scale(1.2);
@@ -102,8 +103,12 @@ h1{
    font-size: 3.4rem; 
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
    margin: 10px;
-   color:#2250bb;
-   letter-spacing: 4px;
+   /*color:#2250bb;*/
+   background: linear-gradient(90deg,#2250bb,  #88bde9,#688adb);
+  background-clip: text;             
+  -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent;
+   letter-spacing: 3px;
 }
 h2{
    color:#e45222;
@@ -133,9 +138,9 @@ footer{
     text-align: center;
 }
 #start img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
 }
 #sobre-mi{
     width: 100vw;
@@ -219,7 +224,8 @@ footer{
 }
 
 .form{
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, 0.027);
+    box-shadow: 8px 8px 15px rgba(0,0,0, .5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,7 +259,8 @@ footer{
 .content-in{
     max-width: 70%;
     height: 85%;
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, 0.027);
+     box-shadow: 8px 8px 15px rgba(0,0,0, .5);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -299,7 +306,8 @@ p{
 }
 
 .card-div{
-    background: rgba(255,255,255,.1);
+   background: rgba(255, 255, 255, 0.027);
+    box-shadow: 8px 8px 15px rgba(0,0,0, .5);
     width: 21%;
     height: 200px;
     padding: 15px 5px 5px 5px;
@@ -348,7 +356,8 @@ p{
    border: 2px solid #001648;
    border-radius: 10px;
    padding: 10px;
-   background: rgba(255,255,255,.1);
+   background: rgba(255, 255, 255, 0.027);
+    box-shadow: 8px 8px 15px rgba(0,0,0, .5);
 }
 .cv a{
     color: #f0eeee;
@@ -359,6 +368,8 @@ p{
 .juego a {
   color: #b19cac;
   font-size: 1.2rem;
+  padding: 10px;
+  margin: 5px;
 }
 
 .modal {
@@ -446,6 +457,13 @@ p{
 
 
 @media (max-width: 768px){
+    #start{
+        height: 100%;
+    }
+    #start img{
+        width: 200px;
+        height: 200px;
+    }
     footer{
         flex-direction: column;
         height: 100%;
