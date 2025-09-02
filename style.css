@@ -92,6 +92,10 @@ a img{
     font-size: 1rem;
    
 }
+.a-codigo img{
+    width: 20px;
+    height: 20px;
+}
 .a-nav:hover{
   transform: scale(1.2);
   color:#e45222;
@@ -103,7 +107,6 @@ h1{
    font-size: 3.4rem; 
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
    margin: 10px;
-   /*color:#2250bb;*/
    background: linear-gradient(90deg,#2250bb,  #88bde9,#2250db);
   background-clip: text;             
   -webkit-background-clip: text;     
@@ -111,6 +114,11 @@ h1{
    letter-spacing: 3px;
 }
 h2{
+
+    background: linear-gradient(90deg,#e45222,  #b96b51,#2250db);
+  background-clip: text;             
+  -webkit-background-clip: text;     
+  -webkit-text-fill-color: transparent;
    color:#e45222;
    font-size: 2rem; 
    text-shadow: 10px 10px 20px rgba(0,0,0, .5);
@@ -512,7 +520,7 @@ p{
     width: 80vh;
     height: 85vh;
     gap:10px;
-
+    
 
     background: rgba(255,255,255, .1);
     box-shadow: 0 25px 45px rgba(0,0,0, .2);
@@ -521,6 +529,12 @@ p{
     border-right: 2px solid rgba(255,255,255,.2);   
     border-bottom: 2px solid rgba(255,255,255,.2);
     backdrop-filter: blur(5px);
+    }
+    .ho-font{
+        background: #b96b5173;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%;
     }
     #sobre-mi{
         height: 100%;
