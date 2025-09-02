@@ -173,9 +173,9 @@ function iniciarJuegoBurbujas() {
     });
 
     // posicionamiento/velocidad
-    burbuja.style.left = (60 + Math.random() * 20) + "%";
+    burbuja.style.left = (10 + Math.random() * 60) + "%";
     burbuja.style.transform = "translateX(-50%)";
-    burbuja.style.animationDuration = (4 + Math.random() * 3) + "s";
+    burbuja.style.animationDuration = (6 + Math.random() * 3) + "s";
 
     // imagen + puntaje fijo
     const img = document.createElement('img');
