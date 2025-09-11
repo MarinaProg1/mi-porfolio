@@ -147,10 +147,38 @@ footer{
     text-align: center;
 }
 #start img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
+
+.div-img2{
+    width: 210px;
+    height: 210px;
+    border: 1px solid;
+    border-color:#d9d7e0 #d9d7e0 #d9d7e0 transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1.5s ease-in-out;
+}
+.div-img1{
+    width: 220px;
+    height: 220px;
+    border: 1px solid;
+    border-color:#d9d7e0 transparent #d9d7e0 #d9d7e0 ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-img1:hover,
+.div-img2:hover{
+    border-color:darkviolet darkviolet darkviolet  transparent;
+    box-shadow: 2px 2px 10px orange, -2px -2px 10px blue;
+}
+
 #sobre-mi{
     width: 100vw;
     height: 100vh;
