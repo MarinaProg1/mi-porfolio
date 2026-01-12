@@ -2,9 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.querySelector(".toggle-btn");
     const navList = document.querySelector(".nav-list");
     const navLinks = document.querySelectorAll(".nav-list a"); // todos los links del menú
+    const year = document.getElementById("year");
 
     const form = document.querySelector(".form");
     const modal = document.getElementById("modal-confirmacion");
+
+    if(year){
+      year.textContent = new Date().getFullYear().toString();
+    }
 
     // Función para cerrar el menú
     const closeMenu = () => {
