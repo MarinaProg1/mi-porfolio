@@ -74,8 +74,8 @@ a{
     text-decoration: none;
 }
 a img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 .a-nav{
   display: inline-block;
@@ -95,6 +95,7 @@ a img{
 .a-codigo img{
     width: 20px;
     height: 20px;
+    margin-right: 5px;
 }
 .a-nav:hover{
   transform: scale(1.2);
